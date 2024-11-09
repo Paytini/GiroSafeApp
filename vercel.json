@@ -4,7 +4,7 @@
       { "src": "server.js", "use": "@vercel/node" }
     ],
     "routes": [
-      { "src": "/api/mandar-email", "dest": "api/mandar-email.js" }
+      { "src": "/(.*)", "dest": "/" }
     ],
     "env": {
       "EMAIL_USER": "EMAIL_USER",
