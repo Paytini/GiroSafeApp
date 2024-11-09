@@ -1,15 +1,16 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "server.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/server.js" }
-  ],
-  "env": {
-    "EMAIL_USER": "tu_correo@gmail.com",
-    "OAUTH_CLIENTID": "tu_cliente_id",
-    "OAUTH_CLIENT_SECRET": "tu_secreto_cliente",
-    "OAUTH_REFRESH_TOKEN": "tu_token_de_actualizacion"
+    "version": 2,
+    "builds": [
+      { "src": "server.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/api/(.*)", "dest": "/server.js" }
+    ],
+    "env": {
+      "EMAIL_USER": "EMAIL_USER",
+      "OAUTH_CLIENTID": "OAUTH_CLIENTID",
+      "OAUTH_CLIENT_SECRET": "OAUTH_CLIENT_SECRET",
+      "OAUTH_REFRESH_TOKEN": "OAUTH_REFRESH_TOKEN"
+    }
   }
-}
+  
