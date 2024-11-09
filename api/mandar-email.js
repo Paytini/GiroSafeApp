@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-export default async function handler(req, res) {
+const enviarCorreo = async (req, res) => {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Método no permitido' });
   }
@@ -33,4 +33,7 @@ export default async function handler(req, res) {
     console.error('Error al enviar el correo:', error);
     res.status(500).json({ success: false, error: error.message });
   }
-}
+};
+
+// Exporta la función para usarla como middleware en Express
+module.exports = enviarCorreo;

@@ -3,6 +3,9 @@
     "builds": [
       { "src": "api/*.js", "use": "@vercel/node" }
     ],
+    "routes": [
+      { "src": "/api/mandar-email", "dest": "api/mandar-email.js" }
+    ],
     "env": {
       "EMAIL_USER": "EMAIL_USER",
       "OAUTH_CLIENTID": "OAUTH_CLIENTID",
