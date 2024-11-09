@@ -7,6 +7,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 // Función para enviar correos electrónicos con OAuth2 usando Nodemailer
 const enviarCorreo = async (req, res) => {
