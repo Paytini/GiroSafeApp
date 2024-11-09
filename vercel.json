@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/*.js", "use": "@vercel/node" }
+    ],
+    "env": {
+      "EMAIL_USER": "EMAIL_USER",
+      "OAUTH_CLIENTID": "OAUTH_CLIENTID",
+      "OAUTH_CLIENT_SECRET": "OAUTH_CLIENT_SECRET",
+      "OAUTH_REFRESH_TOKEN": "OAUTH_REFRESH_TOKEN"
+    }
+  }
+  
