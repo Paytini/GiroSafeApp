@@ -35,5 +35,4 @@ const enviarCorreo = async (req, res) => {
   }
 };
 
-// Exporta la función para usarla como middleware en Express
 module.exports = enviarCorreo;
